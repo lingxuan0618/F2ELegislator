@@ -9,10 +9,10 @@ import {
   faFacebook, faInstagram, faXTwitter
 } from '@fortawesome/free-brands-svg-icons';
 import {
-  faShareNodes
+  faShareNodes, faArrowLeft, faArrowRight
 } from '@fortawesome/free-solid-svg-icons';
 /* add icons to the library */
-library.add(faFacebook, faInstagram, faXTwitter, faShareNodes);
+library.add(faFacebook, faInstagram, faXTwitter, faShareNodes, faArrowLeft, faArrowRight);
 
 import App from './App.vue'
 const app = createApp(App);
