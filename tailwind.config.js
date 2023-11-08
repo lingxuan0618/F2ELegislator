@@ -8,6 +8,10 @@ export default {
       black: '#333333',
       white: '#ffffff',
       mainYellow: '#FFBB18',
+      green: '#006C51',
+    },
+    letterSpacing: {
+      widest: '.5em',
     },
     extend: {},
   },
