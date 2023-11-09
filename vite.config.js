@@ -5,7 +5,5 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   transpileDependencies: true,
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/F2ELegislator/'
-    : '/',
+  base: "F2ELegislator",
 })
