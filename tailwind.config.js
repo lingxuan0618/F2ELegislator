@@ -13,6 +13,8 @@ export default {
         green: '#006C51',
         yellow: '#FFBB1866',
         lightYellow: '#FFF7E6',
+        gray: '#BEBEBE',
+        blue: '#006491',
       },
       letterSpacing: {
         wider: '.25rem',
@@ -20,9 +22,19 @@ export default {
       },
       fontSize: {
         '10': '0.625rem',
+        '40': '2.5rem',
         '64': '4rem',
         '92': '5.75rem',
       },
+      borderRadius: {
+        '4xl': '65px',
+      },
+      height: {
+        '60': '4rem',
+      },
+      rotate: {
+        '9': '9deg',
+      }
     },
   },
   plugins: [],
