@@ -1,7 +1,18 @@
-# Vue 3 + Vite
+# 2023 Mission 1 - 立委競選官網
+[Demo][https://lingxuan0618.github.io/F2ELegislator/]
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### 目前只有開發1920的大螢幕尺寸，其餘尺寸晚點有餘力再一起處理XD
 
-## Recommended IDE Setup
+---
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 設計稿 - 雪寶
+[Mission 1 - 立委競選官網][https://www.figma.com/file/l1w4z3TjTIVDsLAOqQkasp/F2E_%E7%AC%AC%E4%B8%80%E9%97%9C?type=design&node-id=8-6&mode=design&t=tXTjLc8221QBESuW-0]
+
+
+---
+
+## 使用技術及插件
+* vue3
+* vite
+* TailWind
+* FontAwesome
