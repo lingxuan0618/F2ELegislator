@@ -14,7 +14,18 @@
           <h4 class="px-6 text-mainBlack text-7xl">3</h4>
         </div>
       </div>
-      <div class="p-1 text-xs text-center border-t-2 border-black tracking-widest">點擊我就喵喵叫給你聽</div>
+      <div class="relative p-1 text-xs text-center border-t-2 border-black tracking-widest cursor-pointer"
+      @click="clickValue = !clickValue">
+        點擊我就喵喵叫給你聽
+        <div v-if="clickValue === true">
+          <div class="absolute text-center border-2 rounded pl-1" style="top:150%;right:15%">
+            喵喵
+          </div>
+          <div class="absolute text-center border-2 rounded pl-1" style="top:250%;right:0%">
+            投我
+          </div>
+        </div>
+      </div>
     </div>
     <div class="py-5 px-8 border-2 border-black tracking-widest">
       <h4 class="pb-2 text-4xl text-mainBlack">喵立翰</h4>
@@ -46,18 +57,14 @@
   </div>
 </div>
 </template>
+<script setup>
+import { ref } from 'vue'
+const clickValue = ref(false)
+</script>
 <style lang="scss" scoped>
   span {
-    text-align:center;
-    color:transparent;
-    -webkit-text-fill-color: 60px #FFBB18;
-    -webkit-text-stroke: 0.002px #000;
-  }
-  h6 {
-    text-align:center;
-    color:transparent;
-    -webkit-text-fill-color: 60px #FFBB18;
-    -webkit-text-stroke: 2px #000;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: #FFBB18;
   }
 </style>
 
