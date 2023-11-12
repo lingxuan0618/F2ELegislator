@@ -11,24 +11,24 @@
             <h4>好</h4>
             <h4>喵</h4>
           </div>
-          <h4 class="px-6 text-mainBlack text-7xl">3</h4>
+          <h4 class="px-6 text-black text-7xl font-bold">3</h4>
         </div>
       </div>
       <div class="relative p-1 text-xs text-center border-t-2 border-black tracking-widest cursor-pointer"
       @click="clickValue = !clickValue">
         點擊我就喵喵叫給你聽
         <div v-if="clickValue === true">
-          <div class="absolute text-center border-2 rounded pl-1" style="top:150%;right:15%">
+          <div class="absolute text-center border-2 rounded pl-1 shake" style="top:150%;right:15%">
             喵喵
           </div>
-          <div class="absolute text-center border-2 rounded pl-1" style="top:250%;right:0%">
+          <div class="absolute text-center border-2 rounded pl-1 shake" style="top:250%;right:0%">
             投我
           </div>
         </div>
       </div>
     </div>
     <div class="py-5 px-8 border-2 border-black tracking-widest">
-      <h4 class="pb-2 text-4xl text-mainBlack">喵立翰</h4>
+      <h4 class="pb-2 text-4xl text-black font-bold">喵立翰</h4>
       <h4 class="text-xl text-center">少年立委</h4>
     </div>
   </div>
@@ -65,6 +65,43 @@ const clickValue = ref(false)
   span {
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     color: #FFBB18;
+  }
+  .shake { 
+    animation: shakeInfinite 2s linear infinite; 
+  }
+  @keyframes shakeInfinite {
+    0%, 65%{ 
+      -webkit-transform:rotate(0deg);
+      transform:rotate(0deg);
+    }
+    70% {  
+      -webkit-transform:rotate(6deg);
+      transform:rotate(6deg);
+    }
+    75% {  
+      -webkit-transform:rotate(-6deg);
+      transform:rotate(-6deg);
+    }
+    80% {  
+      -webkit-transform:rotate(6deg);
+      transform:rotate(6deg);
+    }
+    85% {  
+      -webkit-transform:rotate(-6deg);
+      transform:rotate(-6deg);
+    }
+    90% {  
+      -webkit-transform:rotate(6deg);
+      transform:rotate(6deg);
+    }
+    95% {  
+      -webkit-transform:rotate(-6deg);
+      transform:rotate(-6deg);
+    }
+    100% {  
+      -webkit-transform:rotate(0deg);
+      transform:rotate(0deg);
+    }
   }
 </style>
 
