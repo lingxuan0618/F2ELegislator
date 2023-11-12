@@ -5,7 +5,7 @@
         <img src="/src/assets/image/homebg.png" alt="homebg" class="relative">
       </div>
       <div class="absolute tracking-wider w-full" style="top: 350%;">
-        <marquee class="transform rotate-9 py-2 text-64 bg-blue font-bold text-white">
+        <marquee class="transform rotate-9 py-2 text-64 bg-blue font-bold text-white tracking-widest">
           少年立委<img src="/src/assets/image/seal.png" alt="選舉章跑馬燈" class="inline h-10 pb-2">
           清流參選
           凍蒜！凍蒜！
@@ -18,8 +18,8 @@
       <img src="/src/assets/image/meow.png" alt="meow">
       <div class="flex flex-col items-center tracking-widest">
         <img src="/src/assets/image/logoGreen.png" alt="meow">
-        <h4 class="pt-6 text-9xl">台灣的明天</h4>
-        <h4 class="pt-6 text-9xl">喵先鋪路</h4>
+        <h4 class="pt-6 text-9xl text-shadow text-mainBlack">台灣的明天</h4>
+        <h4 class="pt-6 text-9xl text-shadow text-mainBlack">喵先鋪路</h4>
         <h4 class="mt-12 px-2 border-2 border-black text-2xl font-bold">2024立委3號參選人 少年立委 勤政愛民 愛您！！</h4>
       </div>
       <div class="pl-10">
@@ -94,3 +94,8 @@ onMounted(() => {
   reciprocalTime()
 })
 </script>
+<style scoped>
+.text-shadow {
+  text-shadow:1px 1px #ffdf63, 2px 2px #ffdf63, 5px 3px #333333
+}
+</style>
