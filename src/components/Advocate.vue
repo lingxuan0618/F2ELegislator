@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen pt-60">
+  <div id="advocate" class="min-h-screen pt-60">
     <div class="flex justify-center">
       <div class="tracking-wider">
         <div class="relative">
