@@ -1,5 +1,5 @@
 <template>
-  <div class="flex bg-image min-h-screen">
+  <div id="support" class="flex bg-image min-h-screen">
     <div>
       <img src="/src/assets/image/product.png" alt="product">
     </div>
