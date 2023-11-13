@@ -8,7 +8,7 @@
       <div class="flex flex-col m-auto" style="max-width: 1080px;">
         <div class="flex justify-between">
           <div v-for="item in policyList" :key="item.id" class="pr-6 relative">
-            <div class="dialog-border-bottom rounded-xl flex flex-col p-3 items-center text-40 text-mainBlack"
+            <div class="dialog-border-bottom rounded-xl flex flex-col p-3 items-center text-40 text-mainBlack cursor-pointer"
             @click="current = item.id">
               <h4>{{item.desc1}}</h4>
               <h4>{{item.desc2}}</h4>
@@ -23,8 +23,8 @@
               <h2 class="text-28">{{item.contentTitle}}</h2>
               <div class="flex items-center text-green text-xl">
                 <h3>分享</h3>
-                <font-awesome-icon icon="fa-brands fa-facebook" class="p-2" />
-                <font-awesome-icon icon="fa-brands fa-instagram" class="p-2" />
+                <font-awesome-icon icon="fa-brands fa-facebook" class="p-2 cursor-pointer" />
+                <font-awesome-icon icon="fa-brands fa-instagram" class="p-2 cursor-pointer" />
               </div>
             </div>
             <div class="flex justify-between">
