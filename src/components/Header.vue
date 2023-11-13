@@ -23,9 +23,9 @@
       <a href="#contact"><h4 class="mx-4 cursor-pointer">民眾服務信箱</h4></a>
     </div>
     <div class="flex text-green text-2xl">
-      <font-awesome-icon icon="fa-brands fa-facebook" class="p-2" />
-      <font-awesome-icon icon="fa-brands fa-instagram" class="p-2" />
-      <font-awesome-icon icon="fa-solid fa-share-nodes" class="p-2" />
+      <font-awesome-icon icon="fa-brands fa-facebook" class="p-2 cursor-pointer" />
+      <font-awesome-icon icon="fa-brands fa-instagram" class="p-2 cursor-pointer" />
+      <font-awesome-icon icon="fa-solid fa-share-nodes" class="p-2 cursor-pointer" />
     </div>
   </div>
 </template>
