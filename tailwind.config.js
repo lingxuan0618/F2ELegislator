@@ -22,6 +22,7 @@ export default {
       },
       fontSize: {
         '10': '0.625rem',
+        '28': '1.75rem',
         '40': '2.5rem',
         '64': '4rem',
         '92': '5.75rem',
@@ -34,7 +35,10 @@ export default {
       },
       rotate: {
         '9': '9deg',
-      }
+      },
+      borderWidth: {
+        '12': '0.75rem'
+      },
     },
   },
   plugins: [],
