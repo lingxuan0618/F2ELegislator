@@ -49,11 +49,9 @@
     <h4>電子郵件地址: meowoffice@linmeow.tw</h4>
   </div>
   <div class="flex items-end text-2xl">
-    <font-awesome-icon icon="fa-brands fa-facebook" class="p-2" />
-    <font-awesome-icon icon="fa-brands fa-instagram" class="p-2" />
-    <font-awesome-icon icon="fa-brands fa-x-twitter" class="p-2" />
-    <!-- <font-awesome-icon icon="fa-solid fa-arrow-right" class="p-2"/>
-    <font-awesome-icon icon="fa-solid fa-arrow-left" class="p-2"/> -->
+    <font-awesome-icon icon="fa-brands fa-facebook" class="p-2 cursor-pointer" />
+    <font-awesome-icon icon="fa-brands fa-instagram" class="p-2 cursor-pointer" />
+    <font-awesome-icon icon="fa-brands fa-x-twitter" class="p-2 cursor-pointer" />
   </div>
 </div>
 </template>
