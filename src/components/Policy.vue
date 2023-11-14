@@ -1,15 +1,16 @@
 <template>
   <div id="policy" class="bg-image min-h-screen">
-    <div class="pt-60">
-      <div class="flex justify-center relative w-full">
+    <div class="py-36">
+      <div class="flex justify-center relative w-full pt-32">
         <h1 class="text-64 text-mainBlack">政策議題</h1>
-        <h1 class="absolute text-92 font-light tracking-widest" style="top:-65%;color:#FFFFFF80">POLICY ISSUES</h1>
+        <h1 class="absolute text-92 font-light tracking-widest" style="top:30%;color:#FFFFFF80">POLICY ISSUES</h1>
       </div>
       <div class="flex flex-col m-auto" style="max-width: 1080px;">
-        <div class="flex justify-between">
+        <div class="flex justify-between pt-4">
           <div v-for="item in policyList" :key="item.id" class="pr-6 relative">
             <div class="dialog-border-bottom rounded-xl flex flex-col p-3 items-center text-40 text-mainBlack cursor-pointer"
-            @click="current = item.id">
+            @click="current = item.id" :class="{'bg-activeYellow': item.id === current}"
+            :style="{'--bgColor': item.id === current ? '#FFF099' : '#FCDD2D'}">
               <h4>{{item.desc1}}</h4>
               <h4>{{item.desc2}}</h4>
             </div>
@@ -75,12 +76,12 @@ const policyList = ref([
     desc2: '休閒天堂',
     contentTitle: '為毛孩子謀福利！ 打造寵物休閒天堂',
     image: '/src/assets/image/policy2.png',
-    subTitle1: '打造寵物休閒天堂',
-    subContent1: '提撥3000萬新台幣，打造寵物休閒天堂',
-    subTitle2: '提供寵物spa設施',
-    subContent2: '正在跟飯店等spa設施負責人，溝通中',
-    subTitle3: '美容玩樂兼具的天堂',
-    subContent3: '為了打造寵物的天堂，已與多位寵物權威商討中',
+    subTitle1: '建立寵物公園',
+    subContent1: '每年撥款新台幣 5 億元，用於在各大都市建立專屬的寵物公園。根據初步規劃，預計在第一年內，將在全國範圍內建立至少 10 座寵物公園',
+    subTitle2: '推廣寵物友善商家',
+    subContent2: '鼓勵商家提供寵物友善的環境，並為參與的商家提供稅收優惠。預計在政策實施後的首年，將有超過 500 家商家加入此計畫',
+    subTitle3: '舉辦寵物活動和工作坊',
+    subContent3: '與各大寵物社團和組織合作，每年舉辦至少 5 場大型的寵物活動，包括寵物才藝比賽、飼養知識工作坊等',
   },
   {
     id: 3,
@@ -89,12 +90,12 @@ const policyList = ref([
     desc2: '飼養教育',
     contentTitle: '領養代替購買，領養不棄養',
     image: '/src/assets/image/policy3.png',
-    subTitle1: '與動物保護志工，攜手合作',
-    subContent1: '與動物保護志工，攜手合作，照顧流浪動物',
-    subTitle2: '進入學校，推廣教育',
-    subContent2: '在小學推廣飼養教育，領養不棄養',
-    subTitle3: '擔任志工，愛護毛小孩',
-    subContent3: '舉辦多場志工活動，讓民眾體驗照顧毛小孩',
+    subTitle1: '建立寵物飼養教育中心',
+    subContent1: '每年撥款新台幣 3 億元，用於在全國各地建立專業的寵物飼養教育中心。預計在第一年內，在全國至少 5 大城市設立教育中心。',
+    subTitle2: '推廣寵物飼養課程',
+    subContent2: '與學校、社區組織和寵物社團合作，推出一系列免費的寵物飼養課程。預計每年將有超過 10,000 名市民受益。',
+    subTitle3: '製作教育資料',
+    subContent3: '出版寵物飼養手冊、影片和線上課程，讓所有有意飼養寵物的家庭都能輕鬆取得正確的知識',
   },
 ])
 
@@ -103,6 +104,7 @@ const policyList = ref([
   .bg-image {
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100vw;
     background-image: url(../assets/image/bg_yellow.png);
   }
   .dialog-border-bottom {
@@ -123,8 +125,9 @@ const policyList = ref([
     left: 70px;
     width: 0px;
   }
+  /* #FCDD2D */
   .dialog-border-bottom:after {
-    border-color: #FCDD2D transparent transparent; 
+    border-color: var(--bgColor) transparent transparent; 
     border-style: solid solid solid solid; 
     border-width: 20px; 
 
