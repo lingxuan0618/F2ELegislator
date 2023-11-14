@@ -1,9 +1,9 @@
 <template>
   <div id="support" class="flex bg-image min-h-screen">
-    <div>
+    <div class="flex-1">
       <img src="/src/assets/image/product.png" alt="product">
     </div>
-    <div class="pt-28 flex-1">
+    <div class="pt-28">
       <div class="relative w-full">
         <h1 class="text-64 text-white">小額捐款</h1>
         <h1 class="absolute text-yellow text-92 font-light tracking-wider w-full" style="top:-70%">SUPPORT US</h1>
@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="flex">
+      <div class="flex flex-wrap">
         <div v-for="item in donateList" :key="item.id" class="flex flex-col  items-center mr-6">
           <div v-if="item.id !== '4'" class="flex flex-col items-center">
             <h4 class="text-2xl text-white pb-4">{{ item.title }}</h4>

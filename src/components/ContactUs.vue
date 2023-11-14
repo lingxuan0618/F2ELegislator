@@ -1,6 +1,6 @@
 <template>
   <div id="contact" class="min-h-screen">
-    <div class="flex flex-col items-center m-auto" style="max-width: 1080px;">
+    <div class="flex flex-col items-center m-auto my-16" style="max-width: 1080px;">
       <div class="flex">
         <div class="flex flex-col justify-end pb-4">
           <div class="relative">
