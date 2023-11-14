@@ -13,6 +13,7 @@ export default {
         green: '#006C51',
         yellow: '#FFBB1866',
         lightYellow: '#FFF7E6',
+        activeYellow: '#FFF099',
         gray: '#BEBEBE',
         blue: '#006491',
       },
